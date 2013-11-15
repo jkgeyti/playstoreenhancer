@@ -272,6 +272,7 @@ javascript: (function () {
         
         console.log("Waiting for apps (try " + (count+1) + " of " + localStorage["applistwaittime"]*2 + ")");
       }, 500);        
-    }    
+    }
+        
   });
 }());  
