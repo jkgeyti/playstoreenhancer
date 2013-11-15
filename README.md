@@ -1,7 +1,7 @@
 Play Store Enhancer
 =================
 
-A bookmarklet for viewing installed/bought apps. Adds the following features to [your account page](https://play.google.com/store/account):
+A bookmarklet for viewing installed/bought apps. Adds the following features to [your account page](https://play.google.com/store/account?hl=en):
 
 - Fetch *all* apps automatically
 - Search, sort, and filter all columns
