@@ -1,8 +1,8 @@
 javascript: (function () {    
   /* check we're on play.google.com/store/account */
-  if (window.location.href.indexOf("play.google.com/store/account") < 0) {
-    if (confirm("This bookmarklet only works on play.google.com/store/account. Do you want to go there now?")) {
-      window.location.href = "https://play.google.com/store/account";
+  if (window.location.href.indexOf("play.google.com/store/account?hl=en") < 0) {
+    if (confirm("This bookmarklet only works on play.google.com/store/account?hl=en. Do you want to go there now?")) {
+      window.location.href = "https://play.google.com/store/account?hl=en";
     }
     return;
   }
