@@ -110,7 +110,7 @@ javascript: (function () {
                              localStorage["applistwaittime"] + " seconds (default 5) while scrolling down. If you're on a slow/unstable connection" + 
                              ", you may want to bump this up a bit. Please enter the amount of seconds you want it to wait for the list of apps to update", localStorage["applistwaittime"]);
           
-          if (time == false) return;
+          if (time == null) return;
           
           if ( /^\+?(0|[1-9]\d*)$/.test(time)) {
             localStorage["applistwaittime"] = parseInt(time);
@@ -188,6 +188,13 @@ javascript: (function () {
       
         /* Make all links open in new windows/tabs */
         $('a').attr('target','_blank');        
+        
+        /* Some price items may be empty, change those to Free so the filter works correctly */
+        $('.purchase-price > div').each(function() {
+          if ($(this).text().trim() == "") {
+            $(this).text('Free');
+          }
+        });
         
         /* Table header UI improvements */
         $('.column').css('cursor', 'pointer');        
